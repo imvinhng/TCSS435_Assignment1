@@ -5,12 +5,39 @@
  * @version 1.0
  */
 public class Solver {
+    private static String searchMethod;
 
-    // BFS alg
+    private static Board myBoard;
 
-    // DFS
+    public Solver(Board theBoard, String theArg) {
+        myBoard = theBoard;
+        searchMethod = theArg;
+        run();
+    }
 
-    // GBFS
+    public static void run() {
+        System.out.println("The program will run using " + searchMethod + " method");
 
-    // AStar
+        // BFS alg
+        if (searchMethod.equals("BFS")) {
+
+        }
+
+        // DFS
+        if (searchMethod.equals("DFS")) {
+
+        }
+
+        // GBFS
+        if (searchMethod.equals("GBFS")) {
+
+        }
+
+        // AStar
+        if (searchMethod.equals("AStar")) {
+
+        }
+
+    }
+
 }
